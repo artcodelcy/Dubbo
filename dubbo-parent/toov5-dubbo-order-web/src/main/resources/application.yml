@@ -1,0 +1,10 @@
+server:
+  port: 8082    #tomcat端口号
+###dubbo 注册服务名称
+dubbo:
+  application:
+    name: order
+  registry:
+    address: zookeeper://192.168.91.5:2181
+  consumer:  #调用服务的超时时间
+    timeout: 5000
